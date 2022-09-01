@@ -1,3 +1,6 @@
+-- plugins.lua
+-- all plugins managed from here
+
 local fn = vim.fn
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 
@@ -31,6 +34,8 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- packer manages itself
     use "nvim-lua/popup.nvim" -- for popups
     use "nvim-lua/plenary.nvim" -- dependency for other packages
+    -- colorschemes
+    use 'Mofiqul/vscode.nvim' -- vscode colorscheme
      
     if PACKER_BOOTSTRAP then
         require("packer").sync()
