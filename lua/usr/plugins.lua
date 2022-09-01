@@ -31,9 +31,23 @@ end
 
 return packer.startup(function(use)
     -- plugins
+
+    -- general
     use "wbthomason/packer.nvim" -- packer manages itself
     use "nvim-lua/popup.nvim" -- for popups
     use "nvim-lua/plenary.nvim" -- dependency for other packages
+
+    -- cmp plugins
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "saadparwaiz1/cmp_luasnip"
+
+    -- snippet plugins
+    use "L3MON4D3/LuaSnip"
+    use "rafamadriz/friendly-snippets"
+
     -- colorschemes
     use 'Mofiqul/vscode.nvim' -- vscode colorscheme
      
