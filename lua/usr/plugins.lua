@@ -42,11 +42,17 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-buffer"
     use "hrsh7th/cmp-path"
     use "hrsh7th/cmp-cmdline"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-nvim-lua"
     use "saadparwaiz1/cmp_luasnip"
 
     -- snippet plugins
     use "L3MON4D3/LuaSnip"
     use "rafamadriz/friendly-snippets"
+
+    -- LSP
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- LSP installer
 
     -- colorschemes
     use 'Mofiqul/vscode.nvim' -- vscode colorscheme
