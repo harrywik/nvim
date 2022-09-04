@@ -66,6 +66,7 @@ return packer.startup(function(use)
 			run = ":TSUpdate"
     }
 		use "p00f/nvim-ts-rainbow" -- for rainbow brackets and paretheses
+		use "windwp/nvim-autopairs" -- for autopairing
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
