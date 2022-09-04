@@ -60,6 +60,11 @@ return packer.startup(function(use)
 		-- telescope
 		use "nvim-telescope/telescope.nvim"
 
+		-- treesitter
+		use {
+			"nvim-treesitter/nvim-treesitter",
+			run = ":TSUpdate"
+    }
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
