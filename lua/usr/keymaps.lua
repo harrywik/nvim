@@ -25,6 +25,9 @@ keymap("n", "<leader>i", "<cmd>LspInstallInfo<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
+-- gitsigns
+keymap("n", "<leader>+", "<cmd>Gitsigns blame_line<cr>", opts)
+
 -- visual block mode
 -- indentation
 keymap("x", "<S-Tab>", "<gv", opts)
