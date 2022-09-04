@@ -1,16 +1,16 @@
 local options = {
-        -- line numbers
-        number = true,
-        relativenumber = true,
-        -- tab
-        tabstop = 4,
-        shiftwidth = 4,
-        softtabstop = 4,
-        expandtab = true,
+  -- line numbers
+  number = true,
+  relativenumber = true,
+  -- tab
+  tabstop = 2,
+  shiftwidth = 2,
+  softtabstop = 2,
+  expandtab = false,
 }
-    
+
 for k, v in pairs(options) do
-        vim.opt[k] = v
+  vim.opt[k] = v
 end
 
 -- iskeyword
