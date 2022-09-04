@@ -10,6 +10,11 @@ configs.setup {
 		enable = true,
 		disable = { "" },
 	},
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+		max_file_lines = 500,
+	},
 	autopairs = {
 		enable = true,
 	},
