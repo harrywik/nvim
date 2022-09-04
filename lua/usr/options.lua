@@ -7,6 +7,7 @@ local options = {
   shiftwidth = 2,
   softtabstop = 2,
   expandtab = false,
+	scrolloff = 999,
 }
 
 for k, v in pairs(options) do

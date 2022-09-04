@@ -21,6 +21,15 @@ keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>l", "<cmd>LspInfo<cr>", opts)
 keymap("n", "<leader>i", "<cmd>LspInstallInfo<cr>", opts)
 
+-- bufferline.nvim
+-- select according to ordinal
+local n_ordinals = 5
+for ordinal = 1, n_ordinals do
+	keymap("n", "<leader>" .. ordinal, "<cmd>BufferLineGoToBuffer " .. ordinal .. "<cr>", opts)
+end
+
+keymap("n", "Q", "<cmd>BufferLinePickClose<cr>", opts)
+
 -- telescope.nvim 
 keymap("n", "<leader>f", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)

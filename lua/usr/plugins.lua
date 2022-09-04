@@ -42,6 +42,9 @@ return packer.startup(function(use)
 	-- file explorer
 	use "kyazdani42/nvim-tree.lua"
 
+	-- buffer tabs
+	use {"akinsho/bufferline.nvim", tag = "v2.*"}
+
 	-- cmp plugins
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
