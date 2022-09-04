@@ -70,6 +70,9 @@ return packer.startup(function(use)
 	use "windwp/nvim-autopairs" -- for autopairing
 	use "JoosepAlviste/nvim-ts-context-commentstring" -- make ts comment aware
 
+	-- git
+	use "lewis6991/gitsigns.nvim"
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end

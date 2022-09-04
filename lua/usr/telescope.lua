@@ -5,4 +5,3 @@ end
 
 -- extensions
 -- telescope.load_extensions("my_extension")
-
