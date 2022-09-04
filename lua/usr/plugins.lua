@@ -51,12 +51,15 @@ return packer.startup(function(use)
     use "rafamadriz/friendly-snippets"
 
     -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- LSP installer
+		use "neovim/nvim-lspconfig" -- enable LSP
+	  use "williamboman/nvim-lsp-installer" -- LSP installer
 
     -- colorschemes
     use 'Mofiqul/vscode.nvim' -- vscode colorscheme
-     
+
+		-- telescope
+		use "nvim-telescope/telescope.nvim"
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
