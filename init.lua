@@ -7,3 +7,4 @@ require "usr.lsp"
 require "usr.telescope"
 require "usr.treesitter"
 require "usr.autopairs"
+require("usr.comment")
