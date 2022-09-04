@@ -37,6 +37,10 @@ return packer.startup(function(use)
 	use "nvim-lua/popup.nvim" -- for popups
 	use "nvim-lua/plenary.nvim" -- dependency for other packages
 	use "numToStr/Comment.nvim" -- easily comment and uncomment
+	use "kyazdani42/nvim-web-devicons" -- icons
+
+	-- file explorer
+	use "kyazdani42/nvim-tree.lua"
 
 	-- cmp plugins
 	use "hrsh7th/nvim-cmp"
