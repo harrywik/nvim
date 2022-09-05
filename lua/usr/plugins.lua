@@ -45,6 +45,9 @@ return packer.startup(function(use)
 	-- buffer tabs
 	use {"akinsho/bufferline.nvim", tag = "v2.*"}
 
+	-- terminal
+	use "akinsho/toggleterm.nvim"
+
 	-- cmp plugins
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
