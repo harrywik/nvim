@@ -4,12 +4,20 @@ if not status_ok then
 end
 
 toggleterm.setup {
-	size = 10,
+	size = 20,
 	open_mapping = [[<C-t>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,
-	direction = "horizontal",
+	direction = "float",
+	float_opts = {
+		border = "curved",
+		winblend = 0,
+		highlights = {
+			border = "Normal",
+			background = "Normal",
+		},
+	},
 	persist_size = true,
 	persist_mode = true,
 	auto_scroll = true,
